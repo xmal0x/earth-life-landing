@@ -9,9 +9,6 @@ Welcome to the Save Our Earth Landing Page! This is a platform dedicated to show
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Project Showcase](#project-showcase)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -34,13 +31,13 @@ To run this project locally, follow these steps:
 1. **Clone the repository:** Use the following command to clone the repository to your local machine.
 
    ```bash
-   git clone https://github.com/your-username/save-our-earth-projects.git
+   git clone https://github.com/xmal0x/earth-life-landing.git
    ```
 
 2. **Navigate to the project directory:** Enter the project directory using the following command.
 
    ```bash
-   cd save-our-earth-projects
+   cd earth-life-landing
    ```
 
 3. **Install dependencies:** Install the necessary dependencies using npm or yarn.
@@ -59,6 +56,6 @@ To run this project locally, follow these steps:
    yarn start
    ```
 
-5. **Access the project:** Open your web browser and go to `http://localhost:3000` to see the Save Our Earth Projects Landing Page.
+5. **Access the project:** Open your web browser and go to `http://localhost:3000` to see the Save Our Earth Landing Page.
 
 ---
