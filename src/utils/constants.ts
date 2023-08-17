@@ -18,10 +18,10 @@ import {
     team5,
     team6,
     tree
-} from "../assets";
-import {IBenefactor, IFeedback, IFooterLink, INavigationLink, IProgram, IResult} from "../types";
+} from '../assets';
+import {Benefactor, Feedback, FooterLink, NavigationLink, Program, Result} from '../types';
 
-export const navLinks: INavigationLink[] = [
+export const navLinks: NavigationLink[] = [
     {
         id: 'programs',
         title: 'Our Programs'
@@ -44,7 +44,7 @@ export const navLinks: INavigationLink[] = [
     },
 ]
 
-export const programs: IProgram[] = [
+export const programs: Program[] = [
     {
         title: 'Reduce Global Warming Now',
         text: 'The warming of the atmosphere has an impact on weather patterns, causing more frequent and severe droughts and storms worldwide.',
@@ -77,32 +77,32 @@ export const programs: IProgram[] = [
     },
 ]
 
-export const results: IResult[] = [
+export const results: Result[] = [
     {
         icon: tree,
-        title: '5898',
+        title: '7178',
         description: 'Trees Planted'
     },
     {
         icon: life,
-        title: '1994',
+        title: '1543',
         description: 'Changing Life Since'
     },
     {
         icon: partner,
-        title: '21 +',
+        title: '52 +',
         description: 'Our Partners'
     },
     {
         icon: hands,
-        title: '385',
+        title: '467',
         description: 'Volunteers'
     },
 ]
 
-export const benefactors: IBenefactor[] = [
+export const benefactors: Benefactor[] = [
     {
-        name: 'Pauline Wright',
+        name: 'Joan Doe',
         position: 'Volunteer',
         image: team1,
         instagramLink: 'https://www.instagram.com',
@@ -118,7 +118,7 @@ export const benefactors: IBenefactor[] = [
         twitterLink: 'https://www.twitter.com'
     },
     {
-        name: 'William Mejia',
+        name: 'William Spielberg',
         position: 'Volunteer',
         image: team3,
         instagramLink: 'https://www.instagram.com',
@@ -126,7 +126,7 @@ export const benefactors: IBenefactor[] = [
         twitterLink: 'https://www.twitter.com'
     },
     {
-        name: 'Brandon Hudgins',
+        name: 'Steven Baggins',
         position: 'Volunteer',
         image: team4,
         instagramLink: 'https://www.instagram.com',
@@ -134,7 +134,7 @@ export const benefactors: IBenefactor[] = [
         twitterLink: 'https://www.twitter.com'
     },
     {
-        name: 'Cesar Watts',
+        name: 'Eric Gates',
         position: 'Volunteer',
         image: team5,
         instagramLink: 'https://www.instagram.com',
@@ -142,7 +142,7 @@ export const benefactors: IBenefactor[] = [
         twitterLink: 'https://www.twitter.com'
     },
     {
-        name: 'James Stewart',
+        name: 'James Grinvald',
         position: 'Volunteer',
         image: team6,
         instagramLink: 'https://www.instagram.com',
@@ -151,7 +151,7 @@ export const benefactors: IBenefactor[] = [
     },
 ]
 
-export const feedbacks: IFeedback[] = [
+export const feedbacks: Feedback[] = [
     {
         name: 'Charles M. Pruitt',
         position: 'Advocacy Partner',
@@ -175,13 +175,13 @@ export const feedbacks: IFeedback[] = [
 ]
 
 export const addressLines: string[] = [
-    '4517 Washington Ave. Manchester, Kentucky 39495',
-    '(505) 555-0125, (406) 555-0120',
-    'binhan628@gmail.com',
-    'manhhachkt08@gmail.com'
+    '4899 Washington Ave. Manchester, Kentucky 77733',
+    '(555) 555-4321, (444) 444-1234',
+    'bizza789@gmail.com',
+    'mankind998@gmail.com'
 ]
 
-export const footerLinks: IFooterLink[] = [
+export const footerLinks: FooterLink[] = [
     {
         id: 'programs',
         title: 'Our Programs'

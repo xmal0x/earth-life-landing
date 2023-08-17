@@ -1,13 +1,22 @@
-import React, {FC} from "react";
-import {styles} from "../styles";
+import React, {FC} from 'react';
+import {styles} from '../styles';
+import {motion} from 'framer-motion'
+import {container} from '../utils/animations';
+
+//fadeIn('left', 'spring', 0, 10)
 
 export const SectionWrapper = (Component: FC<any>, idName: string, styleClasses: string[] = []) =>
     function HOC(props: any) {
         return (
-            <section className={`${styles.paddingX} py-20 w-full mx-auto ${styleClasses.join(' ')}`}>
-                <span className="hash-span" id={idName}>&nbsp;</span>
+            <motion.section
+                variants={container}
+                initial='hidden'
+                whileInView='show'
+                viewport={{once: true, amount: 0.25}}
+                className={`${styles.paddingX} py-20 w-full mx-auto ${styleClasses.join(' ')}`}>
+                <span className='hash-span' id={idName}>&nbsp;</span>
                 <Component {...props}/>
-            </section>
+            </motion.section>
         )
     }
 

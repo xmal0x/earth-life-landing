@@ -1,21 +1,21 @@
-export interface INavigationLink {
+export interface NavigationLink {
     id: string,
     title: string
 }
 
-export interface IProgram {
+export interface Program {
     title: string,
     text: string,
     icon: string
 }
 
-export interface IResult {
+export interface Result {
     icon: string,
     title: string,
     description: string
 }
 
-export interface IBenefactor {
+export interface Benefactor {
     name: string,
     position: string,
     image: string,
@@ -24,14 +24,18 @@ export interface IBenefactor {
     twitterLink: string
 }
 
-export interface IFeedback {
+export interface Feedback {
     name: string,
     position: string,
     text: string,
     image: string
 }
 
-export interface IFooterLink {
+export interface FooterLink {
     id: string,
     title: string
 }
+
+export type AnimationDirection = 'left' | 'right' | 'up' | 'down'
+
+export type AnimationType = 'decay' | 'spring' | 'keyframes' | 'tween' | 'inertia'

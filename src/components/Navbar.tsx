@@ -1,9 +1,9 @@
-import {styles} from "../styles";
+import {styles} from '../styles';
 import {close, eco, menu} from '../assets'
-import {navLinks} from "../utils/constants";
-import {useState} from "react";
-import {Button} from "./UI";
-import {scrollTop} from "../utils/utils";
+import {navLinks} from '../utils/constants';
+import {useState} from 'react';
+import {Button} from './UI';
+import {scrollTop} from '../utils/utils';
 
 const Navbar = () => {
     const [active, setActive] = useState('')
@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     const handleHelpClick = () => {
-        window.location.href='#signup';
+        window.location.href = '#signup';
     }
 
     const getLinks = () => (
@@ -27,38 +27,41 @@ const Navbar = () => {
                     setToggle(!toggle)
                 }}
             >
-                <a href={`#${link.id}`}>{link.title}</a>
-                <hr className="md:hidden flex h-px my-8 bg-gray-200 border-0" />
+                <a
+                    href={`#${link.id}`}
+                    className="w-full h-full flex py-5 md:pl-0 pl-4 lg:text-[16px] text-[14px]"
+                >{link.title}</a>
+                <hr className='md:hidden flex h-px bg-gray-200 border-0'/>
             </li>
         ))
     )
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center py-6 z-20 fixed top-0 bg-primary`}>
-            <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <div className="flex lg:gap-10 gap-5 items-center">
+            <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+                <div className='flex lg:gap-10 gap-5 items-center'>
                     <img
                         src={eco}
-                        alt="logo"
+                        alt='logo'
                         onClick={handleHomeClick}
-                        className="cursor-pointer"
+                        className='cursor-pointer'
                     />
-                    <ul className="md:flex hidden list-none lg:gap-10 gap-5 text-white">
+                    <ul className='md:flex hidden list-none lg:gap-10 gap-5 text-white'>
                         {getLinks()}
                     </ul>
                 </div>
-                <div className="flex flex-row items-center gap-6">
-                    <Button text="Help us Fight" onClick={() => handleHelpClick()}/>
+                <div className='flex flex-row items-center gap-6'>
+                    <Button text='Help us Fight' onClick={() => handleHelpClick()}/>
 
-                    <div className="md:hidden flex flex-col">
+                    <div className='md:hidden flex flex-col'>
                         <img
                             src={toggle ? close : menu}
-                            alt="menu"
-                            className="w-[36px] h-[36px] object-contain cursor-pointer"
+                            alt='menu'
+                            className='w-[36px] h-[36px] object-contain cursor-pointer'
                             onClick={() => setToggle(!toggle)}
                         />
                         <div className={`${toggle ? 'flex' : 'hidden'} w-full bg-white absolute top-24 left-0 `}>
-                            <ul className="flex list-none flex-col w-full p-6">
+                            <ul className='flex list-none flex-col w-full md:p-6'>
                                 {getLinks()}
                             </ul>
                         </div>

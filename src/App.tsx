@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {Benefactors, Feedbacks, Footer, Hero, Navbar, Programs, Results, SignUp,} from "./components";
-import {scrollTop} from "./utils/utils";
+import {Benefactors, Feedbacks, Footer, Hero, Navbar, Programs, Results, SignUp,} from './components';
+import {scrollTop} from './utils/utils';
+import {motion, useScroll} from 'framer-motion'
 
 function App() {
     const [showTopBtn, setShowTopBtn] = useState(false)
@@ -18,13 +19,20 @@ function App() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [handleScroll])
 
+    const { scrollYProgress } = useScroll();
+
     const handleClick = () => {
         scrollTop()
     }
 
     return (
-        <div className="relative z-0">
-            <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className='relative z-0'>
+            <motion.div
+                className="progress-bar"
+                style={{ scaleX: scrollYProgress }}
+            />
+
+            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
                 <Navbar/>
                 <Hero/>
             </div>

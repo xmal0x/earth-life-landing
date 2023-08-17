@@ -2,7 +2,7 @@ interface ButtonProps {
     text: string,
     backgroundColor?: string,
     borderColor?: string,
-    type?: "button" | "submit" | "reset",
+    type?: 'button' | 'submit' | 'reset',
     styleClass?: string[],
     onClick?: () => void
 
