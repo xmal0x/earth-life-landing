@@ -49,7 +49,7 @@ const SignUp = () => {
                 </form>
             </motion.div>
             <motion.div
-                variants={slideIn('right', 'spring', 0, 1)}
+                variants={slideIn('down', 'spring', 0, 1)}
                 className='lg:w-1/2 w-full'>
                 <img
                     src={poster}

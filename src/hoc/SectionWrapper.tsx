@@ -13,7 +13,7 @@ export const SectionWrapper = (Component: FC<any>, idName: string, styleClasses:
                 initial='hidden'
                 whileInView='show'
                 viewport={{once: true, amount: 0.25}}
-                className={`${styles.paddingX} py-20 w-full mx-auto ${styleClasses.join(' ')}`}>
+                className={`${styles.paddingX} md:py-20 py-10 w-full mx-auto ${styleClasses.join(' ')}`}>
                 <span className='hash-span' id={idName}>&nbsp;</span>
                 <Component {...props}/>
             </motion.section>

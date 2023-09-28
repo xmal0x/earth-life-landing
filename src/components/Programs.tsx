@@ -14,7 +14,7 @@ interface ProgramCardProps {
 const ProgramCard = ({index, title, text, icon}: ProgramCardProps) => {
     return (
         <motion.div
-            variants={fadeIn('left', 'spring', 0.01 * index, 1)}
+            variants={fadeIn('right', 'spring', 0.01 * index, 1)}
             className='transition-shadow duration-300 hover:shadow-xl p-6 lg:max-w-[400px] md:max-w-[340px] md:items-start items-center md:text-left text-center flex flex-col max-h-[310px] gap-2 cursor-pointer rounded-md'>
             <img
                 src={icon}
@@ -45,4 +45,5 @@ const Programs = () => {
     )
 }
 
+// export default Programs
 export default SectionWrapper(Programs, 'programs', ['bg-white-100'])
