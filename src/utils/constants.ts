@@ -168,8 +168,7 @@ export const feedbacks: Feedback[] = [
     {
         name: 'Goldie D. Taylor',
         position: 'Investor',
-        text: 'Human degradation of nature is the greatest challenge of the twenty-first century, yet it barely registers as a political issue. Environment solutions often create jobs & economic opportunities.\n' +
-            '\n',
+        text: 'Human degradation of nature is the greatest challenge of the twenty-first century, yet it barely registers as a political issue. Environment solutions often create jobs & economic opportunities.',
         image: feedback3
     },
 ]

@@ -19,7 +19,7 @@ function App() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [handleScroll])
 
-    const { scrollYProgress } = useScroll();
+    const {scrollYProgress} = useScroll();
 
     const handleClick = () => {
         scrollTop()
@@ -29,7 +29,7 @@ function App() {
         <div className='relative z-0'>
             <motion.div
                 className="progress-bar"
-                style={{ scaleX: scrollYProgress }}
+                style={{scaleX: scrollYProgress}}
             />
 
             <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
